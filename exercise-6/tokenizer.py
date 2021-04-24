@@ -39,7 +39,8 @@ def write(input_string, output_path):
     # will result in the following .csv file:
     # a,b
     # c,d
-    writer.writerows( [ helper.tokenize(input_string), helper.normalize(input_string) ] )
+    
+    tokens = helper.tokenize(input_string)
 
     # TODO: construct a list of lists in the
     # following form: 
@@ -49,7 +50,7 @@ def write(input_string, output_path):
     # using the helper.tokenize() and 
     # helper.normalize() functions, then change
     # the below call to use your list of lists
-    tokens_and_normalizations = [ [] ]
+    tokens_and_normalizations = [ [token, helper.normalize(token)] for token in tokens ]
     writer.writerows(tokens_and_normalizations)
 
 
@@ -74,11 +75,11 @@ def parse_arguments():
     input_string = sys.argv[2]
   if sys.argv[1] == "-f":
     with open(sys.argv[2], "r") as f:
-      input_string = csv.read(f).tokenize()
+      input_string = f.read()
 
   # TODO: Change the line below, so that output_file
   # contains the third user-supplied argument
-  outputfile = ""
+  output_file = str(sys.argv[3])
   return input_string, output_file
 
 
