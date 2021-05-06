@@ -9,25 +9,42 @@ There will be 13 exercises, which can be found on  [the course repository on git
 * exercise-1 Introduction to `git`
 * exercise-2 Introduction and installation of `python`
 * exercise-3 Data types: `string` and `list`
-* exercise-4 More data types: `dict`, comprehensions
-* exercise-5 reading and writing files, `.csv`
-* exercise-6 pep8, good documentation, good coding, linting, `regex`?
-* exercise-7 virtual environments: `venv`, `pip` and `poetry`?
-* exercise-8 jupyter
-* exercise-9 pandas
-* exercise-10 visualisation
-* exercise-11 NLP project I: normalisation, `spaCy`
-* exercise-12 NLP project II: word frequencies, palindromes 2?
-* exercise-13 NLP project III: own miniature project
+* exercise-4 `dict`
+* exercise-5 `comprehension`s, reading and writing files, `.csv`
+* exercise-6 `import` and arguments
+* exercise-7 Good practises (pep8, good documentation, good coding, linting, `regex`)
+* exercise-8 pandas and  virtual environments: `venv`, `pip` and `poetry`
 
-## How to submit
+* exercise-9 jupyter?
+* exercise-10 visualisation
+
+* exercise-11 NLP project I: normalisation, `nltk`
+* exercise-12 NLP project II: word frequencies, palindromes 2?, `spaCy`
+* exercise-13 NLP project III: miniature project
+
+## How to use `git` for this course
+
+To get the new exercise, you have to create a `pull request` from the course repository into you own repository. Then, `pull` the new files into your repl.
+
+// TODO make screenshots of this
 
 I recommend that the students use the web interface of github.com and replit.com to manage their `commit`s, so that they don't have to deal too much with the intricacies of `git` and can focus on the programming. 
 
 Should there be problems with the `commit` history and with `pull request`s, check the following points:
 
 * Make sure you're on *your* `fork` of the project and that the `pull request` runs in the right direction (`YourName / uibk-python` ⬅️ `Aequivinius / uibk-python` for getting the new exercise, and the other way for submitting your solution).
-* If you receive a message `❌ Can't automatically merge`, issue the `pull request` anyway. You'll receive a list of *conflicting files*, which you delete. Then you should be able to then proceed with your `pull request`.
+* If you receive a message `❌ Can't automatically merge`, issue the `pull request` anyway. 
+
+![merge](img/merge_error.png)
+
+* You'll receive a list of *conflicting files*, which you delete. 
+
+![conflict](img/conflict.png)
+
+* Then you should be able to then proceed with your `pull request`. Should the problem persist, check the *Files changed* tab, ⠐⠐⠐ and *View file* for the file that is causing the conflict. Copy its contents and paste them in your repository at the correct location.
+
+![conflict_file](img/conflict_file.png)
+
 * As a method of last resort you can always delete your repository (⚙️ Settings, then Danger Zone at the bottom of the screen) and create a fresh `fork`.
 
 ## Where can I get help?
